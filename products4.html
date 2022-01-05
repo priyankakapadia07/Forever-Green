@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forever Green Eco-friendly Shop</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+
+  <body>  
+    <div class="header">  
+        <div class="container">
+          <div class="navbar">
+              <a href="index.html"><img src="images/logo.png"></a>
+             
+              <nav>
+                <ul id="MenuItems">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="accounts.html">Account</a></li>
+                </ul>
+              </nav>
+              <li class ="cart">
+                <a href="cart.html">
+                <img src="images/cart.png" bgcolor ="white" width="30px" height="30px">
+                <span>0</span>
+                </a>
+              </li>
+              <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+          </div>
+        </div>
+    <div>
+
+      
+      <div class="small-container">
+          <h2 class="title">All Products</h2>
+
+          <div class="row">
+            <div class="col-4">
+              <img src="images/bike.jpg">
+              <h4>Electric Bike</h4>
+              <p>$600</p>
+              <a class="add-cart cart10" href="#">ADD TO CART</a> 
+            </div>
+          
+            <div class="col-4">
+              <img src="images/bottle.jpg">
+              <h4>Water Bottle</h4>
+              <p>$19.00</p>
+              <a class="add-cart cart10" href="#">ADD TO CART</a> 
+            </div>
+          
+            <div class="col-4">
+              <img src="images/make-up.jpg">
+              <h4>Cosmetics Kit</h4>
+              <p>$34.00</p>
+              <a class="add-cart cart10" href="#">ADD TO CART</a> 
+            </div>
+          
+            <div class="col-4">
+              <img src="images/perfume.jpg">
+              <h4>Perfume</h4>
+              <p>$52.00</p>
+              <a class="add-cart cart10" href="#">ADD TO CART</a> 
+            </div>
+          </div>
+
+        <div class="page-btn">
+          <span><a href="products.html">&#8592;</a></span>
+          <span><a href="products2.html">2</a></span>
+          <span><a href="products3.html">3</a></span>
+          <span class="solid">4</span>
+        </div>
+
+
+      </div>
+</div>
+
+  
+  <!-- footer -->
+      <div class="footer">
+        <h2 class="title">SHOP NOW AT FOREVER GREEN</h2>
+        <div class="container">
+          <div class="row">
+
+            <div class="footer-col-2">
+              <h3>USEFUL LINKS</h3>
+              <p><a href="about.html">About us</a><br>
+              <a href="products.html">Products</a><br>
+              <a href="contact.html">Contact us</a><br>
+              <a href="policy.html">Policy</a></p>
+            </div>
+
+            <div class="footer-col-2">
+              <a href="https://goo.gl/maps/hvQm87gVH5W8Qof6A" target="_blank"><h3>ADDRESS</h3>
+              <p>350 Victoria Street<br>
+              Toronto<br>
+              Ontario<br>
+              Canada
+              </p></a>
+            </div>
+
+            <div class="footer-col-2">
+              <a href="about.html"><h3>OWNERS</h3>
+              <p>
+                Priyanka Kapadia<br>
+                Tejal Telang<br>
+                Suchi Patel<br>
+                Shivam Patel
+              </p></a>
+            </div>
+
+            <div class="footer-col-2">
+              <h3>FOLLOW US</h3>
+              <p>
+                Facebook<br>
+                Twitter<br>
+                Instagram<br>
+                YouTube
+              </p>
+            </div>
+          </div>
+
+          <hr>
+          <p class="copyright">&copy; Copyright 2020 - Forever Green</p>
+
+        </div>
+      </div>
+
+
+  <!-- JS for toggle menu -->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if(MenuItems.style.maxHeight == "0px")
+      {
+        MenuItems.style.maxHeight = "200px";
+      }
+      else
+      {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+  <script src="products4.js"></script>
+  </body>
+</html>

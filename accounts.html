@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forever Green Eco-friendly Shop</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="header">  
+        <div class="container">
+          <div class="navbar">
+              <a href="index.html"><img src="images/logo.png"></a>
+             
+              <nav>
+                <ul id="MenuItems">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="accounts.html">Account</a></li>
+                </ul>
+              </nav>
+              <img src="images/cart.png" width="30px" height="30px">
+              <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+              <img src="images/green-banner.jpg" width="100%" height="50%">
+            </div>
+        </div>
+    
+
+  <!-- Contact us info -->
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <h2 class="title">Create Account</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <form name="login" action="https://webdev.scs.ryerson.ca/~ttelang/insert.php" method="POST" novalidate="novalidate" id="fwork_contactform">
+              <table class="table">
+                <tr>
+                  <td><label for="firstName">First Name:</label></td>
+                  <td><input type="text" name="fname" id="firstName" required></td>
+                </tr>
+                
+                <tr>
+                  <td><label for="lastName">Last Name:</label></td>
+                  <td><input type="text" name="lname" id="lastName" required></td>
+                </tr>
+
+                <tr>
+                  <td><label for="email">Email:</label></td>
+                  <td><input type="email" name="ename" id="email" required></td>
+                </tr>
+                
+                <tr>
+                  <td><label for="phone">Number:</label></td>
+                  <td><input type="text" id="phone" name="nname" required></td>  
+                </tr>
+                
+                <tr>
+                  <td><label for="username">Username:</label></td>
+                  <td><input type="text" name="uname" id="username"  required></td>
+                </tr>
+
+                <tr>
+                  <td><label for="password">Password:</label></td>
+                  <td><input type="password" name="psname" id="pass" required></td> 
+                </tr>
+
+                <tr>
+                  <td><label for="address">Address:</label></td>
+                  <td><input type="text" name="aname" id="address" required></td>>
+                </tr>
+
+                <tr>
+                  <td><label for="lastName">Province:</label></td>
+                  <td><input type="text" name="pname" id="province" required></td>
+                </tr>
+
+                <tr>                    
+                  <td><label for="zip">Zip:</label></td>
+                  <td><input type="text" name="zname" id="zip"required></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2" class="center"><input type="submit" value="SUBMIT" name="btn" class="btn"></td>
+                </tr>
+                
+                <tr>
+                  <td colspan="2" class="center"><p class="center">By clicking on SUBMIT, you acknowledge having read our <a href="policy.html" target="_blank"><strong>Privacy Policy</strong></a></p></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2" class="center"><p class="center">Already a member? <a href="login.html" target="_blank"><strong>Log In</strong></a></p></td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+
+      <br><br>
+    </div>
+
+
+  <!-- footer -->
+      <div class="footer">
+        <h2 class="title">SHOP NOW AT FOREVER GREEN</h2>
+        <div class="container">
+          <div class="row">
+
+            <div class="footer-col-2">
+              <h3>USEFUL LINKS</h3>
+              <p><a href="about.html">About us</a><br>
+              <a href="products.html">Products</a><br>
+              <a href="contact.html">Contact us</a><br>
+              <a href="policy.html">Policy</a></p>
+            </div>
+
+            <div class="footer-col-2">
+              <a href="https://goo.gl/maps/hvQm87gVH5W8Qof6A" target="_blank"><h3>ADDRESS</h3>
+              <p>350 Victoria Street<br>
+              Toronto<br>
+              Ontario<br>
+              Canada
+              </p></a>
+            </div>
+
+            <div class="footer-col-2">
+              <a href="about.html"><h3>OWNERS</h3>
+              <p>
+                Priyanka Kapadia<br>
+                Tejal Telang<br>
+                Suchi Patel<br>
+                Shivam Patel
+              </p></a>
+            </div>
+
+            <div class="footer-col-2">
+              <h3>FOLLOW US</h3>
+              <p>
+                Facebook<br>
+                Twitter<br>
+                Instagram<br>
+                YouTube
+              </p>
+            </div>
+          </div>
+
+          <hr>
+          <p class="copyright">&copy; Copyright 2020 - Forever Green</p>
+
+        </div>
+      </div>
+
+
+  <!-- JS for toggle menu -->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if(MenuItems.style.maxHeight == "0px")
+      {
+        MenuItems.style.maxHeight = "200px";
+      }
+      else
+      {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+  </body>
+</html>

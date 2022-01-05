@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Forever Green Eco-friendly Shop | Payment</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="paymentstyles.css">
+  <link rel="stylesheet" type="text/css" href="payment.css">
+</head>
+<body>
+
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<a href="index.html"><img src="images/logo.png"></a>
+              <nav>
+                <ul id="MenuItems">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="accounts.html">Account</a></li>
+                </ul>
+              </nav>
+             <li class ="cart">
+             <a href="cart.html">
+             <img src="images/cart.png" bgcolor ="white" width="30px" height="30px">
+             <span>0</span>
+             </a>
+             </li>
+             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+      </div>
+
+    </div>
+
+    <!--Payment form-->
+
+    <div class="container-fluid">
+        <div class="creditCardForm">
+            <div class="heading">
+                <h1>Confirm Purchase</h1>
+            </div>
+            <div class="payment">
+                <form>
+                  <table class="table">
+                    <tr>
+                        <td><label for="owner">Owner</label></td>
+                        <td><input type="text" class="form-control" id="owner"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="cardNumber">Card Number</label></td>
+                        <td><input type="text" class="form-control" id="cardNumber"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="cvv">CVV</label></td>
+                        <td><input type="text" class="form-control" id="cvv"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Expiration Date</label></td>
+                        <td><select>
+                            <option value="01">January</option>
+                            <option value="02">February </option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select>
+                            <option value="21"> 2021</option>
+                            <option value="22"> 2022</option>
+                            <option value="23"> 2023</option>
+                            <option value="24"> 2024</option>
+                            <option value="25"> 2025</option>
+                            <option value="26"> 2026</option>
+                        </select></td>
+                    </tr>
+
+                    <tr>
+                      <td></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="center"><img src="images/visa.jpg" id="visa">
+                        <img src="images/mastercard.jpg" id="mastercard">
+                        <img src="images/amex.jpg" id="amex"></td>
+                    </tr>
+                    
+                    <tr>
+                      <td></td>
+                    </tr>
+
+                    <tr>
+                      <td></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="center"><button type="submit" class="btn" id="confirm-purchase">Confirm</button></td>
+                    </tr>
+                  </table>
+                </form>
+            </div>
+        </div>
+<!--You can try these dummy credit card numbers
+  Type
+  Card Number
+  Security Code
+  
+    Visa
+      4716108999716531
+      257
+      
+    Master Card
+      5281037048916168
+      043
+
+    American Express
+      342498818630298
+      3156
+-->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="jquery.payform.min.js" charset="utf-8"></script>
+    <script src="paymentscript.js"></script>
+
+
+
+      <br><br>
+
+  </div>
+   <!-- footer -->
+      <div class="footer">
+        <h2 class="title">SHOP NOW AT FOREVER GREEN</h2>
+        <div class="container">
+          <div class="row">
+
+            <div class="footer-col-2">
+              <h3>USEFUL LINKS</h3>
+              <p><a href="about.html">About us</a><br>
+              <a href="products.html">Products</a><br>
+              <a href="contact.html">Contact us</a><br>
+              <a href="policy.html">Policy</a></p>
+            </div>
+
+            <div class="footer-col-2">
+              <h3>ADDRESS</h3>
+              <p>350 Victoria Street<br>
+              Toronto<br>
+              Ontario<br>
+              Canada
+              </p>
+            </div>
+
+            <div class="footer-col-2">
+              <h3>OWNERS</h3>
+              <p>
+                Priyanka Kapadia<br>
+                Tejal Telang<br>
+                Suchi Patel<br>
+                Shivam Patel
+              </p>
+            </div>
+
+            <div class="footer-col-2">
+              <h3>FOLLOW US</h3>
+              <p>
+                Facebook<br>
+                Twitter<br>
+                Instagram<br>
+                YouTube
+              </p>
+            </div>
+          </div>
+
+          <hr>
+          <p class="copyright">&copy; Copyright 2020 - Forever Green</p>
+
+        </div>
+      </div>
+
+
+  <!-- JS for toggle menu -->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if(MenuItems.style.maxHeight == "0px")
+      {
+        MenuItems.style.maxHeight = "200px";
+      }
+      else
+      {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+  </body>
+</html>
