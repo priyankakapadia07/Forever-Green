@@ -4,7 +4,7 @@ Web Development Project - [Link to the Website](https://groupproject.tejalryerso
 
 Language: HTML, PHP, CSS, JavaScript, MySQL
 
-Description:Environment friendly online business website with 14 pages. Front-end side includes HTML,
+Description: Environment friendly online business website with 14 pages. Front-end side includes HTML,
 
 CSS and the back-end will be supported by PHP, JavaScript, and MySQL. Customers will get a chance to
 
